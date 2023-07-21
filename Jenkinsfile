@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'cd maven_its'
+                /* sh 'cd maven_its' */
                 echo 'Building..'
                 sh 'mvn clean install compile'
             }
