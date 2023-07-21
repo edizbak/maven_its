@@ -6,8 +6,8 @@ pipeline {
             steps {
                 echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
                 sh 'pwd'
-                /* sh 'rm -rf ./*'
-                git branch: 'main', url: 'https://github.com/edizbak/maven_its.git' */
+                sh 'rm -rf ./*'
+                git branch: 'main', url: 'https://github.com/edizbak/maven_its.git'
 
             }
         }
